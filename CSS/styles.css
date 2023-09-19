@@ -4,7 +4,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
-    
+
 }
 
 .textborder {
@@ -14,18 +14,18 @@
 }
 
 /* HEADING - EVERYTHING THAT SETS UP HOW THE HEADER LOOKS*/
-.header{
+.header {
     width: 100%;
     height: 150px;
     display: block;
     background-color: navy;
 }
 
-.innerheader{
+.innerheader {
     width: 1500px;
     height: 100%;
     display: block;
-    margin: 0 auto;  
+    margin: 0 auto;
     background-color: navy;
 }
 
@@ -39,7 +39,7 @@ ul {
     float: left;
 }
 
-.logo_container h1{
+.logo_container h1 {
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -47,12 +47,12 @@ ul {
     color: white;
 }
 
-.navigation{
+.navigation {
     float: right;
     height: 100%;
 }
 
-.navigation a{
+.navigation a {
     height: 100%;
     display: table;
     float: left;
@@ -60,7 +60,7 @@ ul {
 
 }
 
-.navigation a li{
+.navigation a li {
     display: table-cell;
     vertical-align: middle;
     height: 100%;
@@ -69,7 +69,7 @@ ul {
 }
 
 /* BODY - LETS UP THE DESIGN FOR THE BODY OF THE PAGE*/
-.bodyheader{
+.bodyheader {
     width: 100%;
     height: 150px;
     display: block;
@@ -82,7 +82,7 @@ ul {
     margin: 0 auto;
 }
 
-.person h3{
+.person h3 {
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -90,7 +90,7 @@ ul {
 .title {
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
 }
 
 .contactphoto {
@@ -119,7 +119,7 @@ ul {
     padding: 5px;
 }
 
-.bodyinnerheader p{
+.bodyinnerheader p {
     line-height: 1.25;
 }
 
@@ -134,24 +134,24 @@ button {
     padding: 10px 24px;
     transition-duration: 0.4s;
 }
-  
+
 button:hover {
-    background-color: lightgray; 
+    background-color: lightgray;
     color: black;
-  }
+}
 
 .bottom-margin {
     margin-bottom: 20px;
-  }
+}
 
 /* Styles for links*/
 a {
     text-decoration: none;
-    color: black;  
+    color: black;
 }
 
 a:hover {
-   color: black;
+    color: black;
 }
 
 /* Overlays the image with text. */
@@ -183,4 +183,9 @@ a:hover {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.articleimg {
+    margin: 10px;
+
 }
