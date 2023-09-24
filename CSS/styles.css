@@ -4,6 +4,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
 
 }
 
@@ -129,17 +130,6 @@ ul {
     float: left;
 }
 
-button {
-    margin: 10px;
-    padding: 10px 24px;
-    transition-duration: 0.4s;
-}
-
-button:hover {
-    background-color: lightgray;
-    color: black;
-}
-
 .bottom-margin {
     margin-bottom: 20px;
 }
@@ -193,4 +183,8 @@ a:hover {
     height: 50%;
     width: 50%;
     margin: 10px;
+}
+
+.textborderindex {
+    border: 1px solid navy;
 }
