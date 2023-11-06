@@ -115,9 +115,10 @@ ul {
 }
 
 .teampicture {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     padding: 5px;
+    border-radius: 15px;
 }
 
 .bodyinnerheader p {
@@ -177,6 +178,7 @@ a:hover {
 
 .articleimg {
     margin: 10px;
+    border-radius: 15px;
 }
 
 .schedulephoto {
@@ -188,3 +190,4 @@ a:hover {
 .textborderindex {
     border: 1px solid navy;
 }
+
