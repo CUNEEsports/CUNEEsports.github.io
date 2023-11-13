@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "cuneesports",
+=======
+  "name": "astro-test",
+>>>>>>> master
   "type": "module",
   "version": "0.0.1",
   "scripts": {
