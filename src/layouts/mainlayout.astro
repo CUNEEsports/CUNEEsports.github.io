@@ -1,5 +1,7 @@
 ---
 import '../CSS/styles.css';
+
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <!DOCTYPE html>
@@ -16,6 +18,7 @@ import '../CSS/styles.css';
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="icon" href="Images/bulldog-logo.png">
     <title>Concordia Esports - Home</title>
+    <ViewTransitions />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     </head>
@@ -26,7 +29,7 @@ import '../CSS/styles.css';
             <div class="container-fluid">
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="/">
-                        <img src="Images/bulldog-logo.png" width="30" height="30" class="d-inline-block align-top"
+                        <img src="../Images/bulldog-logo.png" width="30" height="30" class="d-inline-block align-top"
                             alt="">
                         Concordia Esports
                     </a>
@@ -68,7 +71,7 @@ import '../CSS/styles.css';
             </div>
         </nav>
     </header>
-
+    
     <slot></slot>
 
     <footer>
@@ -78,10 +81,10 @@ import '../CSS/styles.css';
                 <div class="col-6 col-md-2 mb-3">
                     <h5>General:</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="articles.html" class="nav-link p-0 text-muted">Articles</a>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="/articles" class="nav-link p-0 text-muted">Articles</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="schedule.html" class="nav-link p-0 text-muted">Schedule</a>
+                        <li class="nav-item mb-2"><a href="/schedule" class="nav-link p-0 text-muted">Schedule</a>
                         </li>
                     </ul>
                 </div>
@@ -89,15 +92,15 @@ import '../CSS/styles.css';
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Games:</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="overwatch.html" class="nav-link p-0 text-muted">Overwatch</a>
+                        <li class="nav-item mb-2"><a href="/overwatch" class="nav-link p-0 text-muted">Overwatch</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="rl.html" class="nav-link p-0 text-muted">Rocket League</a>
+                        <li class="nav-item mb-2"><a href="/rl" class="nav-link p-0 text-muted">Rocket League</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="valorant.html" class="nav-link p-0 text-muted">Valorant</a>
+                        <li class="nav-item mb-2"><a href="/valorant" class="nav-link p-0 text-muted">Valorant</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="lol.html" class="nav-link p-0 text-muted">League of
+                        <li class="nav-item mb-2"><a href="/league" class="nav-link p-0 text-muted">League of
                                 Legends</a></li>
-                        <li class="nav-item mb-2"><a href="ssb.html" class="nav-link p-0 text-muted">Super Smash
+                        <li class="nav-item mb-2"><a href="/ssb" class="nav-link p-0 text-muted">Super Smash
                                 Bros</a></li>
                     </ul>
                 </div>
@@ -117,19 +120,19 @@ import '../CSS/styles.css';
     
                 <div class="d-flex flex-column flex-sm-row justify-content-between">
                     <p>Concordia University, Nebraska Esports Team</p>
-                    <p><b><i>*Not an official Concordia University Nebraska Website*</i></b></p>
+                    <p><b><i>*Not an official Concordia University Nebraska website*</i></b></p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a href="https://instagram.com/cune_esports?igshid=MzRlODBiNWFlZA=="><img
-                                    src="Images/Instagram.png" width="24" height="24"></a></li>
+                                    src="../Images/socials/Instagram.png" width="24" height="24"></a></li>
                         <li class="ms-3"><a href="https://x.com/cune_esports?s=11&t=mp6-VVBHHuIyz58rsIrgMQ"><img
-                                    src="Images/Twitter.png" width="24" height="24"></a></li>
-                        <li class="ms-3"><a href="https://discord.gg/u89quJe5zM"><img src="Images/discord.png"
+                                    src="../Images/socials/Twitter.png" width="24" height="24"></a></li>
+                        <li class="ms-3"><a href="https://discord.gg/u89quJe5zM"><img src="../Images/socials/discord.png"
                                     width="30" height="30"></a></li>
-                        <li class="ms-3"><a href="https://twitch.tv/cune_esports"><img src="Images/Twitch.png"
+                        <li class="ms-3"><a href="https://twitch.tv/cune_esports"><img src="../Images/socials/Twitch.png"
                                     width="33" height="33"></a></li>
                         <li class="ms-3"><a
                                 href="https://www.facebook.com/profile.php?id=100085233332133&mibextid=LQQJ4d"><img
-                                    src="Images/facebook.png" width="28" height="28"></a></li>
+                                    src="../Images/socials/facebook.png" width="28" height="28"></a></li>
                     </ul>
                 </div>
             </div>
