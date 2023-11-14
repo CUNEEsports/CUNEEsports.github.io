@@ -2,6 +2,8 @@
 import '../CSS/styles.css';
 
 import { ViewTransitions } from 'astro:transitions';
+
+let title = 'Concordia University Esports'
 ---
 
 <!DOCTYPE html>
@@ -17,7 +19,7 @@ import { ViewTransitions } from 'astro:transitions';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="icon" href="/Images/bulldog-logo.png">
-    <title>Concordia Esports - Home</title>
+    <title>{title}</title>
     <ViewTransitions />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
